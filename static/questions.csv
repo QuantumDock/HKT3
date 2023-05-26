@@ -1,4 +1,6 @@
 sep=;
 question;a;b;c;d;explanation
 Jak powinno wyglądać bezpieczne hasło;zwykłe słowo;moje imię i nazwisko;$losowy ciąg znaków z małymi i dużymi literami;liczba 4-cyfrowa;Różne rodzaje znaków zmniejszają szansę, że ktoś odgadnie twoje hasło i włamie się na konto.
-Jak poprawnie wyłączyć komputer;przyciskiem na obudowie;$poprzez menu start;odłączyć komputer z prądu;Komputer często wykonuje czynności w tle, które możemy zakłócić poprzez wymuszenie wyłączenia.
+Jak poprawnie wyłączyć komputer?;przyciskiem na obudowie;$poprzez menu start;odłączyć komputer z prądu;Komputer często wykonuje czynności w tle, które możemy zakłócić poprzez wymuszenie wyłączenia.
+Jakie są zagrożenia związane z korzystaniem z Internetu?;oszustwa internetowe;ataki hakerskie;niebezpieczne treści;$wszystkie powyższe;Jest wiele rodzajów zagrożeń, na które można natrafić w internecie.
+Co to jest komunikator internetowy?;$Aplikacja umożliwiająca rozmowy z innymi osobami przez Internet;Telefon komórkowy;Telewizor;Aparat fotograficzny;Za pomocą komunikatora internetowego można za darmo komunikować się z ludźmi z całego świata.
