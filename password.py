@@ -1,5 +1,6 @@
 from math import log2
-CALC_FACTOR = 288500000000 # source unreliable: quora
+#  from timeit import timeit
+CALC_FACTOR = 288500000000  # source: rtx 4090 docs
 DICT_FACTOR = 2.25
 
 
@@ -35,5 +36,3 @@ def time_to_crack(string: str) -> float:
         output = 10 ** 24
     return output
 
-
-print(time_to_crack("%#^GYHIFMB$444 FIEKJfrdt"))
