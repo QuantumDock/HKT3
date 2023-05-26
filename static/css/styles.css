@@ -17,6 +17,7 @@ body {
     rgba(242, 245, 252, 1) -50%,
     rgba(236, 239, 224, 1) 150%
   );
+  font-family: calibri;
 }
 
 /* High-contrast styles */

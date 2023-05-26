@@ -18,6 +18,9 @@
     <title></title>
   </head>
   <body>
+    <nav class="navbar">
+      <button class="navbar__button" id="toggle-high-contrast"><i class="fas fa-adjust"></i></button>
+    </nav>
     {% block body %}{% endblock %}
     <script src="{{ url_for('static', filename='js/contrast.js') }}"></script>
   </body>
