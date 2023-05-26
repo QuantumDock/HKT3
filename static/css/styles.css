@@ -18,6 +18,7 @@ body {
 /* High-contrast styles */
 .high-contrast {
   color: #fff !important;
+  background: linear-gradient(123deg, rgba(13,10,2,1) -50%, rgba(37,21,85,1) 150%);
   background-color: #000 !important;
 }
 
