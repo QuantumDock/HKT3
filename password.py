@@ -23,6 +23,7 @@ def entropy_calculator(string: str) -> float:
     for j in file:  # ↓: decreases entropy if finds a dictionary common word
         if j in string:  # ↓: exponential function - decreasing significance of each next find
             dictionary_factor *= DICT_FACTOR ** (1 / (dictionary_finds + 1))
+            dictionary_finds += 1
     return ((log2(10 * flags[0] + 26 * flags[1] + 26 * flags[2] + 32 * flags[3])) * len(string)) / dictionary_factor
 
 
