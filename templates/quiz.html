@@ -30,7 +30,7 @@
             clear();
             quiz('0'); // displays congratulations "question" div
         }else{
-            if(q+1 !== QUESTIONS){
+            if(q+1 !== QUESTIONS && flag){
                 setTimeout(function(){
                     quiz(q+1);
                 }, 2500);
