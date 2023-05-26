@@ -28,7 +28,7 @@
             clear();
             quiz('0'); // displays congratulations "question" div
         }else{
-            if(q+1 !== QUESTIONS && flag){
+            if(q !== QUESTIONS && flag){
                 setTimeout(function(){
                     quiz(q+1);
                 }, 2500);
@@ -68,7 +68,7 @@
             <form>
                 {% for k in range(1, args[j-1]|length-1) %}
                     <input type="radio" id="q{{ j }}_{{ k }}" value={{ args[j-1][k] }} name="q">
-                    <label for={{ args[j-1][k] }}>{{ args[j-1][k] }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+                    <label for={{ args[j-1][k] }}>{{ args[j-1][k] }}</label><br>
                 {% endfor %}
                 <button type="button" id="q{{ j }}_submit" class="btn btn-primary" onClick="question({{ j }}, {{ corrects[j-1] }})">Submit</button>
             </form>

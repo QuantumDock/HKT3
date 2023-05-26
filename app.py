@@ -9,6 +9,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/slownik")
+def dictionary():
+    return render_template("dictionary.html")
+
+
 @app.route("/quiz")
 def quiz():
     lines = open("static/questions.csv", "rt", encoding='utf-8').readlines()
