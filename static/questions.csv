@@ -1,2 +1,4 @@
-question,a,b,c,d,explanation
-Jak powinno wyglądać bezpieczne hasło,zwykłe słowo,moje imię i nazwisko,$losowy ciąg znaków z małymi i dużymi literami,liczba 4-cyfrowa,Różne rodzaje znaków zmniejszają szansę, że ktoś odgadnie twoje hasło i włamie się na konto.
+sep=;
+question;a;b;c;d;explanation
+Jak powinno wyglądać bezpieczne hasło;zwykłe słowo;moje imię i nazwisko;$losowy ciąg znaków z małymi i dużymi literami;liczba 4-cyfrowa;Różne rodzaje znaków zmniejszają szansę, że ktoś odgadnie twoje hasło i włamie się na konto.
+
