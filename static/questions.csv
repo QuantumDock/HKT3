@@ -1,6 +1,9 @@
 sep=;
 question;a;b;c;d;explanation
-Jak powinno wyglądać bezpieczne hasło;zwykłe słowo;moje imię i nazwisko;$losowy ciąg znaków z małymi i dużymi literami;liczba 4-cyfrowa;Różne rodzaje znaków zmniejszają szansę, że ktoś odgadnie twoje hasło i włamie się na konto.
-Jak poprawnie wyłączyć komputer;przyciskiem na obudowie;$poprzez menu start;odłączyć komputer z prądu;komputera się nie wyłącza;Komputer często wykonuje czynności w tle, które możemy zakłócić poprzez wymuszenie wyłączenia.
-Czy można ufać linkom na podejrzanych stronach;tak, bo nawet jeżeli są niebezpieczne to nie wyrządzą ci szkody;tak, większość linków jest bezpieczna;$nie, niektóre linki są niebezpieczne;nie, wszystkie linki są niebezpieczne;Większość linków jest bezpieczna, jednak lepiej być ostrożnym.
+Jak powinno wyglądać bezpieczne hasło?;zwykłe słowo;moje imię i nazwisko;$losowy ciąg znaków z małymi i dużymi literami;liczba 4-cyfrowa;Różne rodzaje znaków zmniejszają szansę, że ktoś odgadnie twoje hasło i włamie się na konto.
+Jak poprawnie wyłączyć komputer?;przyciskiem na obudowie;$poprzez menu start;odłączyć komputer z prądu;komputera się nie wyłącza;Komputer często wykonuje czynności w tle, które możemy zakłócić poprzez wymuszenie wyłączenia.
+Czy można ufać linkom na podejrzanych stronach?;tak, bo nawet jeżeli są niebezpieczne to nie wyrządzą ci szkody;tak, większość linków jest bezpieczna;$nie, niektóre linki są niebezpieczne;nie, wszystkie linki są niebezpieczne;Większość linków jest bezpieczna, jednak lepiej być ostrożnym.
 Czy zakupy w internecie są bezpieczne?;$tak;nie;być może;czasami;Jeżeli strona jest zaufana, produkt od której ją otrzymamy będzie zgody z tym co zamówiliśmy.
+Jak poprawnie wyłączyć komputer?;przyciskiem na obudowie;$poprzez menu start;odłączyć komputer z prądu;Komputer często wykonuje czynności w tle, które możemy zakłócić poprzez wymuszenie wyłączenia.
+Jakie są zagrożenia związane z korzystaniem z Internetu?;oszustwa internetowe;ataki hakerskie;niebezpieczne treści;$wszystkie powyższe;Jest wiele rodzajów zagrożeń, na które można natrafić w internecie.
+Co to jest komunikator internetowy?;$Aplikacja umożliwiająca rozmowy z innymi osobami przez Internet;Telefon komórkowy;Telewizor;Aparat fotograficzny;Za pomocą komunikatora internetowego można za darmo komunikować się z ludźmi z całego świata.

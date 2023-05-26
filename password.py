@@ -1,5 +1,5 @@
 from math import log2
-CALC_FACTOR = 348441290  # source unreliable: quora
+CALC_FACTOR = 288500000000 # source unreliable: quora
 DICT_FACTOR = 2.25
 
 
