@@ -15,9 +15,9 @@ def entropy_calculator(string: str) -> float:
             flags[3] = True
         else:  # chars outside ascii, add check for that in flask
             raise ArithmeticError
-    file = [i[:-1] for i in open("static/dictionary.txt", "rt").readlines()] # reads text except \n
+    file = [i[:-1] for i in open("static/dictionary.txt", "rt").readlines()]  # reads text except \n
     for j in file:
-        if j in string:
+        if j in string: # decreases entropy if finds a dictionary common word
             dictionary_factor *= 6 if dictionary_factor == 1 else 3
     return ((log2(10*flags[0] + 26*flags[1] + 26*flags[2] + 32*flags[3]))*len(string))/dictionary_factor
 
