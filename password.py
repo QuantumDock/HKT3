@@ -24,7 +24,7 @@ def entropy_calculator(string: str) -> float:
         if j in string:  # ↓: exponential function - decreasing significance of each next find
             dictionary_factor *= DICT_FACTOR ** (1 / (dictionary_finds + 1))
             dictionary_finds += 1
-    return ((log2(10 * flags[0] + 26 * flags[1] + 26 * flags[2] + 32 * flags[3])) * len(string)) / dictionary_factor
+    return ((log2(10 * flags[0] + 26 * flags[1] + 26 * flags[2] + 35 * flags[3])) * len(string)) / dictionary_factor
 
 
 def time_to_crack(string: str) -> float:
@@ -36,4 +36,4 @@ def time_to_crack(string: str) -> float:
     return output
 
 
-print(time_to_crack("123456uytrfedvbnxm"))
+print(time_to_crack("%#^GYHIFMB$444 FIEKJfrdt"))
