@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/QuantumDock/HKT3/issues"
   },
-  "homepage": "https://github.com/QuantumDock/HKT3#readme",
-  "devDependencies": {
-    "node-sass": "^9.0.0"
-  }
+  "homepage": "https://github.com/QuantumDock/HKT3#readme"
 }

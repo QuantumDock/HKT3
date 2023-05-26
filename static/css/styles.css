@@ -12,11 +12,7 @@ html {
 body {
   color: #000;
   background-color: #fff;
-  background: linear-gradient(
-    123deg,
-    rgba(179, 223, 253, 1) 0%,
-    rgba(204, 255, 221, 1) 80%
-  );
+  background: linear-gradient(123deg, rgba(242,245,252,1) -50%, rgba(236,239,224,1) 150%);
 }
 
 /* High-contrast styles */
