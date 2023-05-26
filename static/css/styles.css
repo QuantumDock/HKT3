@@ -187,6 +187,16 @@ li{
     font-size: 130%;
 }
 h6 {
-    font-size: 115%;
+    font-size: 26px !important;
+    font-family: Nunito;
     text-align: center;
 }
+#purplebox {
+    background-color: #a1b5d8;
+    background: linear-gradient(
+    123deg,
+    rgba(161, 181, 216, 1) -10%,
+    rgba(159, 191, 208, 1) 110%
+    );
+}
+
