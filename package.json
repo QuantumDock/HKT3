@@ -1,0 +1,23 @@
+{
+  "name": "hkt3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantumDock/HKT3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuantumDock/HKT3/issues"
+  },
+  "homepage": "https://github.com/QuantumDock/HKT3#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
