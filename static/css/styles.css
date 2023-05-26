@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -84,12 +89,12 @@ body {
 }
 
 .title {
+  font-family: Nunito;
   padding: 2vw 5vw 2vw 5vw;
   font-size: 22px;
 }
 
 .title__about {
-  font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
