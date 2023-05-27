@@ -23,7 +23,22 @@ def time():
 
 @app.route("/portale")
 def portals():
+    return render_template("start.html")
+
+
+@app.route("/portale/jak")
+def jak():
     return render_template("portals.html")
+
+
+@app.route("/portale/porady")
+def porady():
+    return render_template("advice.html")
+
+
+@app.route("/link")
+def link():
+    return render_template("linki.html")
 
 
 @app.route("/quiz")
@@ -56,7 +71,7 @@ def password():
         display_time = ""
         display_class = ""
         if time < 0.01:
-            display_time = "0 sekund - śmiesznie łatwe do złamania."
+            display_time = "0 sekund - złamanie jest tak proste, że hasło nie jest żadnym zabezpieczeniem."
             display_class = "password-red-bold"
         elif time < 120:
             display_time = f"{round(time, 2)} sekund - złamanie będzie bardzo szybkie."

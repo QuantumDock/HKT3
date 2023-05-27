@@ -219,7 +219,12 @@ li {
 .dictionary__content {
   padding: 2vh 4vw 0 4vw;
 }
-
+.dictionary__header--big {
+    font-size: 41px;
+}
+.dictionary__header--small {
+    font-size: 25px;
+}
 .dictionary__definition > p {
   display: inline;
 }
@@ -289,4 +294,16 @@ li {
 }
 .toster{
     text-align: center;
+}
+.start-img{
+    width: 40%;
+}
+.start-div{
+    margin: 50px;
+}
+.start-img__img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }

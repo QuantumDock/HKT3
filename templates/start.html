@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<table>
+    <tr>
+        <div class="start-div">
+            <td class="start-img">
+                <a href="/portale/jak">
+                    <img class="start-img__img" alt="Jak zarejestrować się na najpopularniejsze platformy internetowe" src={{ url_for('static', filename='img/start1.png') }}>
+                </a>
+            </td>
+        </div>
+        <div class="start-div">
+            <td class="start-img">
+                <img class="start-img__img" alt="Podstawowe zasady korzystania z mediów społecznościowych" src={{ url_for('static', filename='img/start2.png') }}>
+            </td>
+        </div>
+    </tr>
+</table>
+{% endblock %}

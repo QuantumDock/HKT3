@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="linki-main">
+  <table>
+    <tr>
+      <td colspan=2>
+        <p>Przeglądając internet możesz napotkać tzw. "Linki". Gdy naciśniesz link, wykonywana jest czynność. Może to być przeniesienie się na inną stronę lub pobranie pliku, ważna więc jest ostrożność i uwaga przy klikaniu na nie. Łatwo odróżnić link od innej części strony - gdy najedziesz kursorem na niego, kursor zmieni kształt na dłoń z wysuniętym palcem wskazującym, sygnalizując możliwość kliknięcia. Jeżeli wcześniej korzystałeś z internetu to pewni już zauważyłeś tę zmianę.</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan=2>
+        <img src={{ url_for('static', filename='img/link.png') }}>
+      </td>
+    </tr>
+  </table>
+  <img src={{ url_for('static', filename='img/jav scirpt.png') }}>
+</div>
+{% endblock %}
