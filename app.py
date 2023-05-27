@@ -29,6 +29,10 @@ def portals():
 def jak():
     return render_template("portals.html")
 
+@app.route("/portale/jak/facebook")
+def facebook():
+    return render_template("facebook.html")
+
 
 @app.route("/portale/porady")
 def porady():
