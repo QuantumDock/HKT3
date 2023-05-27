@@ -21,7 +21,7 @@
             <input type="radio" id="q{{ j }}_{{ k }}" value={{ args[j-1][k] }} name="q">
             <label for="q{{ j }}_{{ k }}">{{ args[j-1][k] }}</label><br>
             {% endfor %}
-            <button type="button" id="q{{ j }}_submit" onClick="question({{ j }}, {{ corrects[j-1] }})">Submit</button>
+            <button type="button" id="q{{ j }}_submit" onClick="question({{ j }}, {{ corrects[j-1] }})">Prześlij odpowiedź</button>
         </form>
     </div>
     {% endfor %}
