@@ -5,6 +5,7 @@ from scam import *
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -28,6 +29,7 @@ def portals():
 @app.route("/portale/jak")
 def jak():
     return render_template("portals.html")
+
 
 @app.route("/portale/jak/facebook")
 def facebook():
