@@ -28,6 +28,11 @@ h2 {
   font-weight: 250;
 }
 
+a {
+  color: #b701b7;
+  text-decoration: none;
+}
+
 /* High-contrast styles */
 .high-contrast {
   color: yellow !important;
@@ -64,6 +69,17 @@ h2 {
   border-width: 0;
   color: #433432;
   padding: 0;
+  /* Dirt hack for high-contrast theme*/
+  background: 0 !important;
+  background-color: 0 !important;
+}
+
+.navbar__main-page {
+  margin-right: 10px;
+  color: #b701b7;
+  /* Dirt hack for high-contrast theme*/
+  background: 0 !important;
+  background-color: 0 !important;
 }
 
 .grid {
@@ -137,6 +153,7 @@ h2 {
 .grid__element__read-more {
   margin: 0.5em 0.5em 0.5em 0;
   align-self: end;
+  color: #b701b7;
 }
 
 .grid__element--quiz {
@@ -150,7 +167,6 @@ h2 {
 }
 
 .grid__element--align_right {
-  text-decoration: none;
   background-color: #fffcf7;
   border: 1px none white;
   border-radius: 16px;
@@ -192,6 +208,7 @@ li {
 }
 
 .dictionary {
+  font-family: Nunito;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 16px;
@@ -215,34 +232,34 @@ li {
 }
 
 .password > p {
-    font-family: Nunito;
-    font-size: 20pt;
+  font-family: Nunito;
+  font-size: 20pt;
 }
-.password-red-bold{
-    font-weight: 700;
-    color: #990000;
+.password-red-bold {
+  font-weight: 700;
+  color: #990000;
 }
-.password-red{
-    font-weight: 500;
-    color: #ee1111;
+.password-red {
+  font-weight: 500;
+  color: #ee1111;
 }
-.password-orange{
-    font-weight: 425;
-    color: #ff9933;
+.password-orange {
+  font-weight: 425;
+  color: #ff9933;
 }
-.password-yellow{
-    font-weight: 425;
-    color: #777700;
+.password-yellow {
+  font-weight: 425;
+  color: #777700;
 }
-.password-green-first{
-    font-weight: 475;
-    color: #33cc33;
+.password-green-first {
+  font-weight: 475;
+  color: #33cc33;
 }
-.password-green-second{
-    font-weight: 550;
-    color: #11ee11;
+.password-green-second {
+  font-weight: 550;
+  color: #11ee11;
 }
-.password-blue{
-    font-weight: 600;
-    color: #1111ee;
+.password-blue {
+  font-weight: 600;
+  color: #1111ee;
 }

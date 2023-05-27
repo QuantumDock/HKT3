@@ -9,6 +9,7 @@ function toggle(special){
   var grid = document.querySelectorAll(".grid__element");
   var navbar = document.querySelector(".navbar");
   var navbar_button = document.querySelector(".navbar__button");
+  var navbar_page = document.querySelector(".navbar__main-page");
   try {
     var questions = document.querySelector(".questions");
     questions.classList.toggle("high-contrast--special");
@@ -25,6 +26,7 @@ function toggle(special){
   });
   navbar.classList.toggle("high-contrast--special");
   navbar_button.classList.toggle("high-contrast");
+  navbar_page.classList.toggle("high-contrast");
   body.classList.toggle("high-contrast");
   }
 var toggleButton = document.getElementById("toggle-high-contrast");
