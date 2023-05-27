@@ -342,7 +342,7 @@ li {
     background: linear-gradient(123deg, rgba(255,241,218,1) -5%, rgba(255,238,238,1) 105%);
 }
 .white-border {
-    border: solid rgba(255, 255, 255, 100)
+    border: solid rgba(255, 255, 255, 0);
     border-width: 10px;
     border-radius: 25px;
 }
@@ -384,7 +384,7 @@ li {
     width: 86vw;
 }
 .linki-main{
-    width: 86vw%;
+    width: 86vw;
     margin-left: 7vw;
     margin-right: 7vw;
     margin-top: 30px;
