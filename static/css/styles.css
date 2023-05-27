@@ -29,7 +29,7 @@ h2 {
 }
 
 a {
-  color: #b701b7;
+  color: #006080;
   text-decoration: none;
 }
 
@@ -61,7 +61,6 @@ a {
   justify-content: end;
   position: static;
   padding: 16px;
-  border: 1px solid #000;
 }
 
 .navbar__button {
@@ -76,7 +75,7 @@ a {
 
 .navbar__main-page {
   margin-right: 10px;
-  color: #b701b7;
+  color: #006080;
   /* Dirt hack for high-contrast theme*/
   background: 0 !important;
   background-color: 0 !important;
@@ -130,17 +129,23 @@ a {
 
 .title__img {
   width: 100%;
+  margin-left: 2vw;
+}
+
+.title__img--high-contrast {
+  content: url("{{ url_for('static', filename='img/senior_contrast.png')}}")
 }
 
 .title__heading {
-  margin-left: 10vw;
+  margin-left: 15vw;
+  font-size: 4em;
   align-self: center;
+  color: #738290;
 }
 
 .title__about {
   grid-area: about;
   font-style: normal;
-  font-size: 16px;
   margin-left: 64px;
 }
 
@@ -153,7 +158,7 @@ a {
 .grid__element__read-more {
   margin: 0.5em 0.5em 0.5em 0;
   align-self: end;
-  color: #b701b7;
+  color: #006080;
 }
 
 .grid__element--quiz {
@@ -229,11 +234,54 @@ li {
   display: inline;
 }
 
+.scam {
+  padding: 0 3vw 0 3vw;
+  font-size: 18px;
+  text-align: center;
+}
+
+.grid__scam {
+  display: grid;
+  margin: 3vw 10vw 0 10vw;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "metoda metoda"
+    "mail mail"
+    "tel tel";
+  row-gap: 3vw;
+}
+
+.grid__scam--metoda > h1,
+.grid__scam--tel > h1,
+.grid__scam--mail > h1 {
+  background-color: white;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px;
+}
+
+.grid__scam--metoda > h2,
+.grid__scam--tel > h2,
+.grid__scam--mail > h2 {
+  padding: 16px;
+}
+
+.grid__scam--mail {
+  grid-area: mail;
+}
+
+.grid__scam--tel {
+  grid-area: tel;
+}
+
 .password {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 15vh;
+  flex-direction: column;
 }
 
 .password > p {
@@ -276,7 +324,7 @@ li {
     max-height: 50px;
     height: 50px;
 }
-.flexbox{ /* not a real flexbox */
+.flexbox { /* not a real flexbox */
     padding: 4px;
     width: 85%;
     margin: 0 auto;
@@ -284,24 +332,24 @@ li {
     vertical-align: top;
     background: linear-gradient(123deg, rgba(255,241,218,1) -5%, rgba(255,238,238,1) 105%);
 }
-.white-border{
+.white-border {
     border: solid rgba(255, 255, 255, 100)
     border-width: 10px;
     border-radius: 25px;
 }
-.pafori{
+.pafori {
     margin-top: 50px;
 }
-.toster{
+.toster {
     text-align: center;
 }
-.start-img{
+.start-img {
     width: 40%;
 }
-.start-div{
+.start-div {
     margin: 50px;
 }
-.start-img__img{
+.start-img__img {
   display: block;
   margin-left: auto;
   margin-right: auto;
