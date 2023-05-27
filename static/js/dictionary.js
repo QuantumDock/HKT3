@@ -9,7 +9,7 @@ function fileread(){
       })
       .then(function(fileContents) {
         let input = document.getElementById("dictionary__input").value;
-        let dataArray = fileContents.split('\r\n').map(function(line) {
+        let dataArray = fileContents.split('\n').map(function(line) {
           return line.split(';'); // Split each line by comma
         });
         console.log(input)
