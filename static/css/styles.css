@@ -338,6 +338,7 @@ li {
 }
 
 .password > p {
+  padding: 10vh 0 5vh 0;
   font-family: Nunito;
   font-size: 20pt;
   max-height: 30vh;
@@ -434,10 +435,10 @@ li {
 
 .advice-3 {
   filter: brightness(93%);
+}
 
-.linki-img-first{
-    width: 70%;
-
+.linki-img-first {
+  width: 70%;
 }
 
 .advice-4 {
@@ -464,4 +465,3 @@ li {
   display: flex;
   justify-content: center;
 }
-
