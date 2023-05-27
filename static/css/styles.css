@@ -434,6 +434,10 @@ li {
 
 .advice-3 {
   filter: brightness(93%);
+
+.linki-img-first{
+    width: 70%;
+
 }
 
 .advice-4 {
@@ -455,12 +459,9 @@ li {
   margin-right: 7vw;
   margin-top: 30px;
 }
-<<<<<<< HEAD
-.linki-main{
-    width: 86vw;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    margin-top: 30px;
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
-=======
->>>>>>> c40fbb5 (Partially revert "html, css: advice sub-subsite added")
+
