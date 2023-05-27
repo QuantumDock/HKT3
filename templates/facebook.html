@@ -2,4 +2,25 @@
 
 {% block body %}
 
+<h1> Jak założyć konto na platformie "Facebook"? </h1>
+<div class="steps">
+    <div class="circle">
+        <h2>1</h2>
+    </div>
+    <h2 class="steps__instructions">Kilknij "Utwórz nowe konto"</h2>
+    <img class="steps__img" src="{{ url_for('static', filename='img/login1.png')}}"/>
+</div>
+<div class="steps__second">
+    <div class="circle">
+        <h2>2</h2>
+    </div>
+    <h2 class="steps__instructions">Wypełnij formularz</h2>
+    <h3 class="steps__text">Po wprowadzeniu adresu e-mail, strona poprosi o wprowadzenie go drugi raz.
+
+Data urodzenia i płeć służą Facebookowi do personalizacji korzystania, czyli dopasowania odpowiednich filmików i zdjęć do Twoich upodobań.
+
+Po wypełnieniu i kliknięciu „Zarejestruj się” trzeba będzie wypełnić kod weryfikacyjny który przyszedł na podany adres e-mail albo numer telefonu. To właśnie wybrany sposób rejestracji będzie sposobem logowania.</h3>
+    <img class="steps__img--special" src="{{ url_for('static', filename='img/login2.png')}}"/>
+</div>
+
 {% endblock %}

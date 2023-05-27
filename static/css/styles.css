@@ -473,3 +473,59 @@ li {
 .dark-facebook {
   color: #ffff00 !important;
 }
+
+.circle {
+  display: flex;
+  background-color: #a1b5d8;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  grid-area: circle;
+}
+
+.steps {
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 12fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "circle steps ."
+    "text photo .";
+}
+
+.steps__instructions {
+  margin: 4px 0 0 0;
+  padding-left: 4px;
+  grid-area: steps;
+}
+
+.steps__img {
+  grid-area: photo;
+  object-fit: cover;
+  width: 100%;
+  margin-left: 5vw;
+}
+
+.steps__img--special {
+  width: 500px;
+  grid-area: photo;
+}
+
+.steps__text {
+  grid-area: text;
+  font-family: Nunito;
+  padding-left: 6px;
+  font-weight: 350;
+}
+
+.steps__second {
+  padding-left: 12px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 12fr;
+  grid-template-rows: 1fr 16fr;
+  grid-template-areas:
+    "circle steps ."
+    ". text photo";
+}
