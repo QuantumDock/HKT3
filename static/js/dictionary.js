@@ -31,4 +31,4 @@ function fileread(){
       .catch(function(error) {
         console.error('File load error:', error);
       });
-}
+}rcmd
