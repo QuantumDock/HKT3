@@ -17,6 +17,14 @@ function toggle(special) {
     //pass
   }
   try {
+      var linki_button = document.querySelector(".hc-linki");
+      linki_button.forEach((i) => {
+            i.classList.toggle("high-contrast--special");
+          });
+    } catch (TypeError) {
+      //pass
+    }
+  try {
     var scam = document.querySelectorAll(".grid__scam--h1");
     scam.forEach((i) => {
       i.classList.toggle("high-contrast--special");

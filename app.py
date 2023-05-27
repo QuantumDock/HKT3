@@ -15,9 +15,9 @@ def dictionary():
     return render_template("dictionary.html")
 
 
-@app.route("/linki")
+@app.route("/gry")
 def time():
-    return render_template("time.html")
+    return render_template("gry.html")
 
 
 @app.route("/portale")
@@ -60,11 +60,11 @@ def quiz():
 
 @app.route("/hasla", methods=["GET"])
 def password():
-    if "taffy" not in request.args or request.args["taffy"] == "":
+    if "pass" not in request.args or request.args["pass"] == "":
         return render_template("password.html", display=False)
     else:
         try:
-            time = time_to_crack(request.args["taffy"])
+            time = time_to_crack(request.args["pass"])
         except:
             return render_template("password.html", display=False)
         display_time = ""
