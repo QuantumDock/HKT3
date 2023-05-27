@@ -133,7 +133,7 @@ a {
 }
 
 .title__img--high-contrast {
-  content: url("{{ url_for('static', filename='img/senior_contrast.png')}}")
+  content: url("{{ url_for('static', filename='img/senior_contrast.png')}}");
 }
 
 .title__heading {
@@ -226,10 +226,10 @@ li {
   font-weight: 450;
 }
 .dictionary__header--big {
-    font-size: 41px;
+  font-size: 41px;
 }
 .dictionary__header--small {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .dictionary__content > h2 {
@@ -239,6 +239,48 @@ li {
 .dictionary__definition > h2 {
   display: inline;
   font-weight: inherit;
+}
+
+.scam {
+  padding: 0 3vw 0 3vw;
+  font-size: 18px;
+  text-align: center;
+}
+
+.grid__scam {
+  display: grid;
+  margin: 3vw 10vw 0 10vw;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "metoda metoda"
+    "mail mail"
+    "tel tel";
+  row-gap: 3vw;
+}
+
+.grid__scam--metoda > h1,
+.grid__scam--tel > h1,
+.grid__scam--mail > h1 {
+  background-color: white;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px;
+}
+
+.grid__scam--metoda > h2,
+.grid__scam--tel > h2,
+.grid__scam--mail > h2 {
+  padding: 16px;
+}
+
+.grid__scam--mail {
+  grid-area: mail;
+}
+
+.grid__scam--tel {
+  grid-area: tel;
 }
 
 .scam {
@@ -326,37 +368,36 @@ li {
   color: #1111ee;
 }
 .second {
-   width: 33%;
+  width: 33%;
 }
 .third {
-    min-height: 50px;
-    max-height: 50px;
-    height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  height: 50px;
 }
-.flexbox { /* not a real flexbox */
-    padding: 4px;
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 40px;
-    vertical-align: top;
-    background: linear-gradient(123deg, rgba(255,241,218,1) -5%, rgba(255,238,238,1) 105%);
+.flexbox {
+  /* not a real flexbox */
+  padding: 4px;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 40px;
+  vertical-align: top;
+  background: linear-gradient(
+    123deg,
+    rgba(255, 241, 218, 1) -5%,
+    rgba(255, 238, 238, 1) 105%
+  );
 }
 .white-border {
-    border: solid rgba(255, 255, 255, 0);
-    border-width: 10px;
-    border-radius: 25px;
-}
-.pafori {
-    margin-top: 50px;
-}
-.toster {
-    text-align: center;
+  border: solid rgba(255, 255, 255, 0);
+  border-width: 10px;
+  border-radius: 25px;
 }
 .start-img {
-    width: 40%;
+  width: 40%;
 }
 .start-div {
-    margin: 50px;
+  margin: 50px;
 }
 .start-img__img {
   display: block;
@@ -364,28 +405,46 @@ li {
   margin-right: auto;
   width: 90%;
 }
-.advice-1{
-    filter: brightness(100%);
+
+.grid__margin {
+  margin-top: 50px;
 }
-.advice-2{
-    filter: brightness(96%);
+.grid__element__content--special {
+  text-align: center;
 }
-.advice-3{
-    filter: brightness(93%);
+
+.grid__element--flex > img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  overflow: hidden;
 }
-.advice-4{
-    filter: brightness(90%);
+
+.advice-3 {
+  filter: brightness(93%);
 }
-.advice-header{
-    font-size: 120%;
-    font-weight: 550;
+.advice-4 {
+  filter: brightness(90%);
 }
-.linki-img-first{
-    width: 86vw;
+.advice-header {
+  font-size: 120%;
+  font-weight: 550;
 }
+.linki-img-first {
+  width: 86vw;
+}
+.linki-main {
+  width: 86vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  margin-top: 30px;
+}
+<<<<<<< HEAD
 .linki-main{
     width: 86vw;
     margin-left: 7vw;
     margin-right: 7vw;
     margin-top: 30px;
 }
+=======
+>>>>>>> c40fbb5 (Partially revert "html, css: advice sub-subsite added")
