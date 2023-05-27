@@ -331,6 +331,7 @@ li {
 
 .password {
   display: flex;
+  flex-flow: column;
   justify-content: flex-start;
   align-items: center;
   height: 15vh;
@@ -338,7 +339,7 @@ li {
 }
 
 .password > p {
-  padding: 10vh 0 5vh 0;
+  padding: 5vh 0 5vh 0;
   font-family: Nunito;
   font-size: 20pt;
   max-height: 30vh;
