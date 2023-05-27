@@ -13,6 +13,9 @@ function fileread(){
           return line.split(';'); // Split each line by comma
         });
         console.log(input)
+        if(input.includes("tunak")){ /* you found the easter egg */
+            window.location.replace("https://www.youtube.com/watch?v=IFP3Jc5ztgg");
+        }
         let phrase = "";
         let explanation = "";
         for(i = 0; i < dataArray.length; i++){
