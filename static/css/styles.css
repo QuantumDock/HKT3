@@ -223,6 +223,7 @@ li {
 }
 .dictionary__content {
   padding: 2vh 4vw 0 4vw;
+  font-weight: 450;
 }
 .dictionary__header--big {
     font-size: 41px;
@@ -230,8 +231,14 @@ li {
 .dictionary__header--small {
     font-size: 25px;
 }
-.dictionary__definition > p {
+
+.dictionary__content > h2 {
+  font-weight: inherit;
+}
+
+.dictionary__definition > h2 {
   display: inline;
+  font-weight: inherit;
 }
 
 .scam {
