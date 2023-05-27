@@ -17,6 +17,18 @@ function toggle(special) {
     //pass
   }
   try {
+      var facebook = document.querySelector("#hc-facebook");
+      facebook.classList.toggle("dark-facebook");
+    } catch (TypeError) {
+      //pass
+    }
+    try {
+          var quiz_thing = document.querySelector("#question0");
+          quiz_thing.classList.toggle("high-contrast");
+        } catch (TypeError) {
+          //pass
+        }
+  try {
       var linki_button = document.querySelector(".hc-linki");
       linki_button.forEach((i) => {
             i.classList.toggle("high-contrast--special");

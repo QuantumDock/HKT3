@@ -5,26 +5,31 @@
   <table>
     <tr>
       <td colspan=2>
-        <div class="flexbox white-border">
+        <div class="flexbox white-border hc-time advice-2">
           <p>Przeglądając internet możesz napotkać tzw. "Linki". Gdy naciśniesz link, wykonywana jest czynność. Może to być przeniesienie się na inną stronę lub pobranie pliku, ważna więc jest ostrożność i uwaga przy klikaniu na nie. Łatwo odróżnić link od innej części strony - gdy najedziesz kursorem na niego, kursor zmieni kształt na dłoń z wysuniętym palcem wskazującym, sygnalizując możliwość kliknięcia. Jeżeli wcześniej korzystałeś z internetu to pewni już zauważyłeś tę zmianę.</p>
         </div>
       </td>
     </tr>
     <tr>
       <td colspan=2>
-        <div class="flexbox white-border img-container">
+        <div class="white-border img-container">
           <img class="linki-img-first" src={{ url_for('static', filename='img/link.png') }}>
         </div>
       </td>
     </tr>
     <tr>
-      <td colspan=2>
-        <div class="flexbox white-border">
+      <td colspan=1>
+        <div class="flexbox white-border hc-time advice-3">
           <p>Linki są adresem czegoś i pozwalają komputerowi to odnaleźć. Przykładowo, klikając w link na stronie internetowej jesteś zdolny przenieść się na inną część tej strony. Są dzięki temu wielkim ułatwieniem w korzystaniu z internetu.</p>
+          <p>Jednak są osoby które wykorzystują je w celach oszukania innych. Na niektórych stronach możesz napotkać reklamy podszywające się pod właścicieli strony. Najczęściej próbują one użytkownika nastraszyć lub obiecują wygranie nagrody. Po kliknięciu na taki link jesteś przeniesony na stronę proszącą Ciebie o podanie danych osobowych lub naciśnięcie większej ilości linków. Kończy się to najczęściej instalacją wirusa.
+        </div>
+      </td>
+      <td colspan=1>
+        <div class="white-border">
+          <img class="linki-img-second" src={{ url_for('static', filename='img/jav scirpt.png') }}>
         </div>
       </td>
     </tr>
   </table>
-  <img src={{ url_for('static', filename='img/jav scirpt.png') }}>
 </div>
 {% endblock %}

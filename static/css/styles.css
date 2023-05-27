@@ -452,7 +452,11 @@ li {
 }
 
 .linki-img-first {
-  width: 86vw;
+  width: 40vw;
+}
+
+.linki-img-second {
+  width: 15vw;
 }
 
 .linki-main {
@@ -465,4 +469,7 @@ li {
 .img-container {
   display: flex;
   justify-content: center;
+}
+.dark-facebook {
+  color: #ffff00 !important;
 }
