@@ -292,10 +292,10 @@ li {
 }
 
 .password > p {
-  margin-top: 20vh;
   font-family: Nunito;
   font-size: 20pt;
   max-height: 30vh;
+  text-align: center;
 }
 .password-red-bold {
   font-weight: 700;
