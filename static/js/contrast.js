@@ -6,6 +6,13 @@ toggleButton.addEventListener("click", function () {
   var grid = document.querySelectorAll(".grid__element");
   var navbar = document.querySelector(".navbar");
   var navbar_button = document.querySelector(".navbar__button");
+  try {
+    var questions = document.querySelector(".questions");
+    questions.classList.toggle("high-contrast--special");
+  } catch (TypeError) {
+    //pass
+  }
+
   // Toggle the "high-contrast" class on the body element
   grid.forEach((gridElement) => {
     gridElement.classList.toggle("high-contrast--special");
