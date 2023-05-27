@@ -169,3 +169,43 @@ li {
 .dictionary__definition > p {
   display: inline;
 }
+
+.password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.password > p {
+    font-family: Nunito;
+    font-size: 20pt;
+}
+.password-red-bold{
+    font-weight: 700;
+    color: #990000;
+}
+.password-red{
+    font-weight: 500;
+    color: #ee1111;
+}
+.password-orange{
+    font-weight: 425;
+    color: #ff9933;
+}
+.password-yellow{
+    font-weight: 425;
+    color: #777700;
+}
+.password-green-first{
+    font-weight: 475;
+    color: #33cc33;
+}
+.password-green-second{
+    font-weight: 550;
+    color: #11ee11;
+}
+.password-blue{
+    font-weight: 600;
+    color: #1111ee;
+}

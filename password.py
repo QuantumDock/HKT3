@@ -32,7 +32,7 @@ def time_to_crack(string: str) -> float:
     output = 2 ** (entropy_calculator(string)) / CALC_FACTOR
     if output < 0.0000001:
         output = 0
-    if output > 10 ** 24:
-        output = 10 ** 24
+    if output > 10 ** 40:
+        output = 10 ** 40
     return output
 
