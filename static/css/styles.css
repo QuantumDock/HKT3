@@ -94,6 +94,10 @@ a {
   align-content: end;
 }
 
+.grid > a {
+  color: black;
+}
+
 .grid__element {
   background-color: #a1b5d8;
   background: linear-gradient(
@@ -420,19 +424,31 @@ li {
   overflow: hidden;
 }
 
+.advice-1 {
+  filter: brightness(100%);
+}
+
+.advice-2 {
+  filter: brightness(96%);
+}
+
 .advice-3 {
   filter: brightness(93%);
 }
+
 .advice-4 {
   filter: brightness(90%);
 }
+
 .advice-header {
   font-size: 120%;
   font-weight: 550;
 }
+
 .linki-img-first {
   width: 86vw;
 }
+
 .linki-main {
   width: 86vw;
   margin-left: 7vw;
