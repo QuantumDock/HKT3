@@ -36,13 +36,13 @@
     <h1>Sprawdzanie numerów podejrzanych</h1>
     <h2 class="password__header">Wpisz numer, który do ciebie zadzwonił:&nbsp;</h2>
     <form action="/oszustwa" method="get">
-        <input type="text" name="taffy" id="taffy">
+        <input type="tel" name="tel" id="tel">
         <button type="submit">Sprawdź</button>
     </form>
 </div>
 <div class="password">
     {% if display %}
-    {{ time|safe }}
+        {{ time|safe }}
     {% endif %}
 </div>
 {% endblock %}

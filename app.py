@@ -1,10 +1,9 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 import re
 from password import *
 from scam import *
 
 app = Flask(__name__)
-
 
 @app.route("/")
 def index():
@@ -98,21 +97,21 @@ def password():
         return render_template("password.html", display=True, time=display_end)
 @app.route("/oszustwa", methods=["GET"])
 def scam():
-    if "taffy" not in request.args or request.args["taffy"] == "":
+    if "tel" not in request.args or request.args["tel"] == "":
         return render_template("scam.html", display=False)
     else:
-        time = False
         try:
-            time = time_to_crack(request.args["taffy"])
-        except:
+            time = check_scam(request.args["tel"])
+            display_time = ""
+            display_class = ""
+            if time:
+                display_time = "Oszust! Dzwoniący może chcieć wyłudzić od ciebie pieniądze!"
+                display_class = "password-red"
+            else:
+                display_time = "Bezpieczny numer!"
+                display_class = "password-green-second"
+            display_end = f"<p class={display_class}>{display_time}</p>"
+            return render_template("scam.html", display=True, time=display_end)
+        except Exception:
             return render_template("scam.html", display=False)
-        display_time = ""
-        display_class = ""
-        if time:
-            display_time = "Oszust! Dzwoniący może chcieć wyłudzić od ciebie pieniądze!"
-            display_class = "password-red"
-        else:
-            display_time = "Bezpieczny numer!"
-            display_class = "password-green-second"
-        display_end = f"<p class={display_class}>{display_time}</p>"
-        return render_template("scam.html", display=True, time=display_end)
+
