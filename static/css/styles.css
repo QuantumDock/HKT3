@@ -99,15 +99,33 @@ h2 {
 }
 
 .title {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 0.75fr 0.7fr;
+  grid-template-areas:
+    "img title"
+    "about about"
+    "quiz quiz";
   padding: 2vw 5vw 2vw 5vw;
   font-size: 22px;
   font-family: Nunito;
   font-style: normal;
 }
 
+.title__img {
+  width: 100%;
+}
+
+.title__heading {
+  margin-left: 10vw;
+  align-self: center;
+}
+
 .title__about {
+  grid-area: about;
   font-style: normal;
   font-size: 16px;
+  margin-left: 64px;
 }
 
 .grid__element__content {
@@ -119,6 +137,25 @@ h2 {
 .grid__element__read-more {
   margin: 0.5em 0.5em 0.5em 0;
   align-self: end;
+}
+
+.grid__element--quiz {
+  grid-area: quiz;
+  width: 90%;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 32px;
+  justify-content: space-between;
+}
+
+.grid__element--align_right {
+  text-decoration: none;
+  background-color: #fffcf7;
+  border: 1px none white;
+  border-radius: 16px;
+  padding: 24px;
+  color: black;
 }
 
 li {
