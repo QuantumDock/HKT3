@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import re
 from password import *
+from scam import *
 
 app = Flask(__name__)
 
@@ -38,7 +39,10 @@ def password():
     if "taffy" not in request.args or request.args["taffy"] == "":
         return render_template("password.html", display=False)
     else:
-        time = time_to_crack(request.args["taffy"])
+        try:
+            time = time_to_crack(request.args["taffy"])
+        except:
+            return render_template("password.html", display=False)
         display_time = ""
         display_class = ""
         if time < 0.01:
@@ -65,5 +69,25 @@ def password():
         else:
             display_time = f"{round(time/31536000000000000000000000, 2)} trylionów lat - jesteś mistrzem tworzenia bezpiecznych haseł!"
             display_class = "password-blue"
-        display_time = f"<p class={display_class}>{display_time}</p>"
-        return render_template("password.html", display=True, time=display_time)
+        display_end = f"<p class={display_class}>{display_time}</p>"
+        return render_template("password.html", display=True, time=display_end)
+@app.route("/oszustwa", methods=["GET"])
+def scam():
+    if "taffy" not in request.args or request.args["taffy"] == "":
+        return render_template("scam.html", display=False)
+    else:
+        time = False
+        try:
+            time = time_to_crack(request.args["taffy"])
+        except:
+            return render_template("scam.html", display=False)
+        display_time = ""
+        display_class = ""
+        if time:
+            display_time = "Oszust! Dzwoniący może chcieć wyłudzić od ciebie pieniądze!"
+            display_class = "password-red"
+        else:
+            display_time = "Bezpieczny numer!"
+            display_class = "password-green-second"
+        display_end = f"<p class={display_class}>{display_time}</p>"
+        return render_template("scam.html", display=True, time=display_end)
