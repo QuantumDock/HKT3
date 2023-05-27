@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="grid pafori">
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/u.png') }}"/>
+            <div class="grid__element__content toster">
+                <h1>Facebook</h1>
+            </div>
+        </div>
+    </div>
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/pizza.png') }}"/>
+            <div class="grid__element__content toster">
+                <h1>Instagram</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/pn.jpg') }}"/>
+            <div class="grid__element__content toster">
+                <h1>Pinterest</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/musk.png') }}"/>
+            <div class="grid__element__content toster">
+                <h1>Twitter</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/fufhn.jpg') }}"/>
+
+            <div class="grid__element__content toster">
+                <h1>YouTube</h1>
+
+            </div>
+        </div>
+    </div>
+    <div class="grid__element">
+        <div class="grid__element--flex">
+            <img src="{{ url_for('static', filename='img/ndh.jpg') }}"/>
+
+            <div class="grid__element__content toster ">
+                <h1>Messenger</h1>
+                 
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

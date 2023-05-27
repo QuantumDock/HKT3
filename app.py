@@ -16,6 +16,16 @@ def dictionary():
     return render_template("dictionary.html")
 
 
+@app.route("/linki")
+def time():
+    return render_template("time.html")
+
+
+@app.route("/portale")
+def portals():
+    return render_template("portals.html")
+
+
 @app.route("/quiz")
 def quiz():
     lines = open("static/questions.csv", "rt", encoding='utf-8').readlines()

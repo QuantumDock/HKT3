@@ -16,6 +16,15 @@ function toggle(special){
   } catch (TypeError) {
     //pass
   }
+  try {
+      var times = document.querySelectorAll(".hc-time");
+        times.forEach((i) => {
+          i.classList.toggle("high-contrast--special");
+        });
+      times.classList.toggle("high-contrast--special");
+    } catch (TypeError) {
+      //pass
+    }
   if(special){
     var storedValue = sessionStorage.getItem('theme');
     sessionStorage.setItem('theme', (storedValue == 1 ? 0 : 1));

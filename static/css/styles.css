@@ -263,3 +263,30 @@ li {
   font-weight: 600;
   color: #1111ee;
 }
+.second {
+   width: 33%;
+}
+.third {
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+}
+.flexbox{
+    padding: 4px;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 40px;
+    vertical-align: top;
+    background: linear-gradient(123deg, rgba(255,241,218,1) -5%, rgba(255,238,238,1) 105%);
+}
+.white-border{
+    border: solid rgba(255, 255, 255, 100)
+    border-width: 10px;
+    border-radius: 25px;
+}
+.pafori{
+    margin-top: 50px;
+}
+.toster{
+    text-align: center;
+}
