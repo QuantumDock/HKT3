@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block body %}
-    <script src={{ url_for('static', filename='js/dictionary.js') }}></script>
+    <script src="{{ url_for('static', filename='js/dictionary.js') }}"></script>
     <div class="dictionary">
         <div class="dictionary__header">
             <h2 class="dictionary__header--big">Słowniczek</h2>
@@ -10,8 +10,11 @@
         <div class="dictionary__content">
             <p>Wyszukaj termin, który cię interesuje:</p>
             <input autocomplete="off" autofocus name="name" placeholder="Wyszukaj!" type="text" id="dictionary__input">
-            <button type="button" onclick="search()">Wyszukaj</button>
-            <p id="placeholder"></p>
+            <button type="button" onclick="fileread()">Wyszukaj</button>
+            <br><br>
+            <div class="dictionary__definition">
+                <p id="placeholder-title"></p><p id="placeholder-dash"></p><p id="placeholder-text"></p>
+            </div>
         </div>
     </div>
 {% endblock %}
